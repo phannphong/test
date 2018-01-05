@@ -1,0 +1,32 @@
+business_rules.entities:
+  class: \Drupal\Core\Menu\LocalTaskDefault
+  deriver: \Drupal\business_rules\Plugin\Derivative\BusinessRulesLocalTask
+entity.business_rule.collection:
+  title: 'Rules'
+  route_name: entity.business_rule.collection
+  base_route: entity.business_rule.collection
+  weight: 0
+
+entity.business_rules_condition.collection:
+  title: 'Conditions'
+  route_name: entity.business_rules_condition.collection
+  base_route: entity.business_rule.collection
+  weight: 20
+
+entity.business_rules_action.collection:
+  title: 'Actions'
+  route_name: entity.business_rules_action.collection
+  base_route: entity.business_rule.collection
+  weight: 10
+
+entity.business_rules_variable.collection:
+  title: 'Variables'
+  route_name: entity.business_rules_variable.collection
+  base_route: entity.business_rule.collection
+  weight: 30
+
+business_rules.settings:
+  title: 'Settings'
+  route_name: business_rules.settings
+  base_route: entity.business_rule.collection
+  weight: 40

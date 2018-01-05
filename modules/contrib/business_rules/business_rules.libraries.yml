@@ -1,0 +1,19 @@
+style:
+  css:
+    theme:
+      css/style.css: {}
+
+mxClient:
+  css:
+    theme:
+      css/common.css: {}
+      css/explorer.css: {}
+  js:
+    js/mxInit.js: {}
+    /libraries/business_rules_js/sanitizer.min.js: {}
+    /libraries/business_rules_js/mxClient.min.js: {}
+    /libraries/business_rules_js/Graph.min.js: {}
+    js/mxEnd.js: {}
+    js/update-flowchart-command.js: {}
+  dependencies:
+    - core/drupal.ajax
